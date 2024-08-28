@@ -4,6 +4,12 @@ import numpy as np
 import cv2
 from PIL import Image
 
+# Check if TensorFlow is imported
+try:
+    print("TensorFlow version:", tf.__version__)
+except ImportError:
+    st.error("TensorFlow is not installed. Please install TensorFlow to use this app.")
+
 # Load the trained model
 @st.cache_resource
 def load_model():
@@ -12,7 +18,7 @@ def load_model():
 model = load_model()
 
 # Class labels (replace with actual student names)
-class_labels = class_labels = [
+class_labels = [
     'Alton', 'Andrew', 'Bella', 'Bosen', 'Cia-Cia', 'Clarissa',
     'Derrick', 'Edward', 'Eric', 'Ian', 'Indakananda Putta',
     'Kenneth', 'Logan', 'Louis', 'Lovie', 'Matthew', 'Morgan',
