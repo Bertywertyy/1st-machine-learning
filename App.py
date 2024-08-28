@@ -13,11 +13,8 @@ model = load_model()
 
 # Class labels (replace with actual student names)
 class_labels = class_labels = [
-    'Alton', 'Andrew', 'Bella', 'Bosen', 'Cia-Cia', 'Clarissa',
-    'Derrick', 'Edward', 'Eric', 'Ian', 'Indakananda Putta',
-    'Kenneth', 'Logan', 'Louis', 'Lovie', 'Matthew', 'Morgan',
-    'Raphael', 'Renan', 'Selena', 'Seralyn', 'Stephanie',
-    'Vincent', 'Wilbert'
+    'Derrick','Ian','Louis', 'Lovie', 'Matthew', 'Morgan',
+    'Raphael', 'Renan', 'Selena','Wilbert'
 ]
 
 # Preprocessing function
